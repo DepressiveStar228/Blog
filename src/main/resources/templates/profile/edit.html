@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Редагувати профіль</title></head>
+<body>
+
+<h2>Редагувати профіль</h2>
+
+<div th:if="${success}" th:text="${success}" style="color:green"></div>
+<div th:if="${error}" th:text="${error}" style="color:red"></div>
+
+<form th:action="@{/profile/edit}" method="post">
+    <div>
+        <label>Username</label>
+        <input type="text" name="username" th:value="${user.username}" required />
+    </div>
+    <div>
+        <label>Про себе</label>
+        <textarea name="bio" rows="4" th:text="${user.bio}"></textarea>
+    </div>
+    <button type="submit">Зберегти</button>
+    <a th:href="@{/profile/{username}(username=${user.username})}">Скасувати</a>
+</form>
+
+</body>
+</html>

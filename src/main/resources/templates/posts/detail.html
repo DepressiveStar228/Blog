@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head><title th:text="${post.title}"></title></head>
+<body>
+
+<a th:href="@{/posts}">← Назад</a>
+
+<h1 th:text="${post.title}"></h1>
+<small>
+    <a th:href="@{/profile/{username}(username=${post.author.username})}"
+       th:text="${post.author.username}"></a> ·
+    <span th:text="${#temporals.format(post.createdAt, 'dd.MM.yyyy HH:mm')}"></span>
+</small>
+
+<p th:text="${post.content}"></p>
+
+<div sec:authorize="isAuthenticated()">
+    <div th:if="${post.author.email == #authentication.name}">
+        <a th:href="@{/posts/{id}/edit(id=${post.id})}">Редагувати</a>
+        <form th:action="@{/posts/{id}/delete(id=${post.id})}" method="post"
+              onsubmit="return confirm('Видалити пост?')">
+            <button type="submit">Видалити</button>
+        </form>
+    </div>
+</div>
+
+<hr/>
+
+<h3>Коментарі (<span th:text="${#lists.size(comments)}"></span>)</h3>
+
+<div th:each="comment : ${comments}">
+    <strong th:text="${comment.author.username}"></strong>
+    <small th:text="${#temporals.format(comment.createdAt, 'dd.MM.yyyy HH:mm')}"></small>
+    <p th:text="${comment.content}"></p>
+
+    <div sec:authorize="isAuthenticated()">
+        <div th:if="${comment.author.email == #authentication.name
+                   or post.author.email == #authentication.name}">
+            <form th:action="@{/posts/{postId}/comments/{commentId}/delete(postId=${post.id}, commentId=${comment.id})}"
+                  method="post">
+                <button type="submit">Видалити коментар</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div th:if="${#lists.isEmpty(comments)}">
+    <p>Коментарів ще немає. Будь першим!</p>
+</div>
+
+<div sec:authorize="isAuthenticated()">
+    <h4>Залишити коментар</h4>
+    <form th:action="@{/posts/{id}/comments(id=${post.id})}" method="post">
+        <textarea name="content" rows="3" placeholder="Ваш коментар..." required></textarea>
+        <br/>
+        <button type="submit">Надіслати</button>
+    </form>
+</div>
+
+<div sec:authorize="!isAuthenticated()">
+    <p><a th:href="@{/login}">Увійдіть</a>, щоб залишити коментар.</p>
+</div>
+
+</body>
+</html>

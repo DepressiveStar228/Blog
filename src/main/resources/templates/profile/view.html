@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head><title th:text="${profileUser.username}"></title></head>
+<body>
+
+<h2 th:text="${profileUser.username}"></h2>
+<p th:text="${profileUser.bio} ?: 'Про себе не вказано'"></p>
+<small>На сайті з <span th:text="${#temporals.format(profileUser.createdAt, 'dd.MM.yyyy')}"></span></small>
+
+<div sec:authorize="isAuthenticated()">
+    <div th:if="${profileUser.email == #authentication.name}">
+        <a th:href="@{/profile/edit}">Редагувати профіль</a>
+    </div>
+</div>
+
+<hr/>
+<h3>Пости автора</h3>
+
+<div th:each="post : ${posts}">
+    <h4>
+        <a th:href="@{/posts/{id}(id=${post.id})}" th:text="${post.title}"></a>
+    </h4>
+    <small th:text="${#temporals.format(post.createdAt, 'dd.MM.yyyy HH:mm')}"></small>
+    <p th:text="${#strings.abbreviate(post.content, 150)}"></p>
+    <hr/>
+</div>
+
+<div th:if="${#lists.isEmpty(posts)}">
+    <p>Поки що немає жодного поста.</p>
+</div>
+
+<a th:href="@{/posts}">← До всіх постів</a>
+
+</body>
+</html>

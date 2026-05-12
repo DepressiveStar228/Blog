@@ -25,7 +25,7 @@ public class SecurityConfig {
                         .requestMatchers("/posts/new", "/posts/*/edit", "/posts/*/delete").authenticated()
                         .requestMatchers("/profile/edit").authenticated()
                         .requestMatchers("/posts/*/comments/**").authenticated()
-                        .anyRequest().permitAll()  // всё остальное — публичное
+                        .anyRequest().permitAll()
                 )
                 .formLogin(form -> form
                         .loginPage("/login")

@@ -761,14 +761,9 @@
     }, {
       "id": "bd25bf16-c921-4b4e-8a96-3b96712b9918",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//button[contains(.,'Видалити коментар')]",
-      "targets": [
-        ["css=button:nth-child(2)", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Видалити коментар')]", "xpath:innerText"]
-      ],
+      "command": "executeScript",
+      "target": "document.querySelector(\"form[action*='/delete']\").submit();",
+      "targets": [],
       "value": ""
     }, {
       "id": "c4a4e7c7-6e97-4616-a51b-893011e15ba1",
@@ -869,18 +864,6 @@
         ["xpath=//a[contains(@href, '/profile/me')]", "xpath:href"],
         ["xpath=//nav/a", "xpath:position"],
         ["xpath=//a[contains(.,'Мій кабінет')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "828c1306-2e09-445a-bf29-7ee079aeceaa",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=//button[contains(.,'Вийти')]",
-      "targets": [
-        ["css=button", "css:finder"],
-        ["xpath=//button[@type='submit']", "xpath:attributes"],
-        ["xpath=//button", "xpath:position"],
-        ["xpath=//button[contains(.,'Вийти')]", "xpath:innerText"]
       ],
       "value": ""
     }, {

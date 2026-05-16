@@ -38,7 +38,6 @@ jobs:
       - name: Install Selenium Side Runner
         run: |
           npm install -g selenium-side-runner
-          npm install -g chromedriver
 
       - name: Run Selenium IDE tests
         run: >

@@ -789,6 +789,89 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "be9bdc15-9992-497d-a45e-bcc1521b062c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Увійти",
+      "targets": [
+        ["linkText=Увійти", "linkText"],
+        ["css=.btn-outline", "css:finder"],
+        ["xpath=//a[contains(text(),'Увійти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Увійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee74bc81-c965-4ad8-b014-76b7bcda06e1",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=div:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afa0cc08-3c8e-4a5c-9bc0-a62880d1e08a",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "artem.nikiforov@student.sumdu.edu.ua"
+    }, {
+      "id": "da688218-a16a-42c3-96f1-d3e9237d4bb2",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "953121c0-9434-4005-9514-1fad5da4b57f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "111111"
+    }, {
+      "id": "7c7cfe9f-7106-4ae5-9544-9f0314c618ef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Ввійти')]",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ввійти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "758aeda8-29b8-4472-a80d-23e6a54205ab",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Мій кабінет",
+      "targets": [
+        ["linkText=Мій кабінет", "linkText"],
+        ["css=.btn-outline", "css:finder"],
+        ["xpath=//a[contains(text(),'Мій кабінет')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile/me')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мій кабінет')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "828c1306-2e09-445a-bf29-7ee079aeceaa",
       "comment": "",
       "command": "click",

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/AuthControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/PasswordResetTokenTest.java" afterDir="false" />
+    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog/BlogApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +63,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.BlogApplication.executor": "Run",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/JetBrains/Projects/demo",
     "node.js.detected.package.eslint": "true",
@@ -78,6 +74,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.40647483",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -88,10 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JetBrains\Projects\demo\src\test\java\com\example\blog" />
       <recent name="E:\JetBrains\Projects\demo\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.blog in blog">
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
     <configuration name="blog in blog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <option name="TEST_OBJECT" value="directory" />
@@ -133,6 +131,7 @@
       <workItem from="1778422941880" duration="6218000" />
       <workItem from="1778597376809" duration="10222000" />
       <workItem from="1778680991729" duration="3879000" />
+      <workItem from="1778950792344" duration="3532000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1">
       <option name="closed" value="true" />
@@ -171,5 +170,8 @@
     <MESSAGE value="Lab 1" />
     <MESSAGE value="Lab 2" />
     <option name="LAST_COMMIT_MESSAGE" value="Lab 2" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Blog$blog_in_blog.ic" NAME="blog in blog Coverage Results" MODIFIED="1778684895803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

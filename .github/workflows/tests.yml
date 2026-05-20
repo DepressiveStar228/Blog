@@ -1,4 +1,4 @@
-name: CI/CD Pipeline (Unit & E2E Tests)
+name: CI/CD Pipeline (Unit, Robot & E2E Tests)
 
 on:
   push:
@@ -20,6 +20,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
           cache: 'maven'
+
+      - name: Code Style Analysis (CheckStyle)
+        run: mvn checkstyle:check
+
+      - name: Static Code Analysis (SpotBugs)
+        run: mvn com.github.spotbugs:spotbugs-maven-plugin:check
 
       - name: Run Unit Tests and Build Project
         run: mvn clean package
@@ -43,3 +49,27 @@ jobs:
         run: >
           selenium-side-runner src/test/java/com/example/blog/e2e_tests/Blog.side 
           -c "browserName=chrome goog:chromeOptions.args=[--headless,--no-sandbox,--disable-dev-shm-usage]"
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Robot Framework
+        run: |
+          python -m pip install --upgrade pip
+          pip install robotframework robotframework-seleniumlibrary
+
+      - name: Run Robot Framework Tests
+        run: >
+          robot 
+          --variable BROWSER:headlesschrome 
+          --outputdir robot_reports 
+          src/test/java/com/example/blog/robot_tests/blog_tests.robot
+
+      - name: Upload Robot Reports
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: robot-test-reports
+          path: robot_reports/

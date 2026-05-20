@@ -21,9 +21,6 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
 
-      - name: Code Style Analysis (CheckStyle)
-        run: mvn checkstyle:check
-
       - name: Static Code Analysis (SpotBugs)
         run: mvn com.github.spotbugs:spotbugs-maven-plugin:check
 

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 5.2 Robot test">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/tests.yml" afterDir="false" />
-    </list>
+    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 5.2 Fix 2 tests.yml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +137,7 @@
       <workItem from="1778950792344" duration="11403000" />
       <workItem from="1779271359757" duration="1255000" />
       <workItem from="1779272693086" duration="1234000" />
-      <workItem from="1779274839780" duration="4440000" />
+      <workItem from="1779274839780" duration="4983000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1">
       <option name="closed" value="true" />
@@ -253,7 +251,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779293036673</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Lab 5.2 Fix tests.yml">
+      <option name="closed" value="true" />
+      <created>1779293231323</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1779293231323</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Lab 5.2 Fix 2 tests.yml">
+      <option name="closed" value="true" />
+      <created>1779293307850</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1779293307850</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +299,9 @@
     <MESSAGE value="Lab 3.2 Fix 7 Blog.side" />
     <MESSAGE value="Lab 3.2 Fix 8 Blog.side" />
     <MESSAGE value="Lab 5.2 Robot test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 5.2 Robot test" />
+    <MESSAGE value="Lab 5.2 Fix tests.yml" />
+    <MESSAGE value="Lab 5.2 Fix 2 tests.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 5.2 Fix 2 tests.yml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Blog$blog_in_blog.ic" NAME="blog in blog Coverage Results" MODIFIED="1778684895803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

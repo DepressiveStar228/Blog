@@ -10,6 +10,16 @@ ${VALID_USER}     artemka.n.arambler.ru@gmail.com
 ${VALID_PASS}     111111
 
 *** Test Cases ***
+Register New User
+    [Documentation]    Реєстрація користувача у чистій базі даних
+    Open Blog Page
+    Click Link    Реєстрація
+    Input Text    id=username    Robot
+    Input Text    id=email       ${VALID_USER}
+    Input Text    id=password    ${VALID_PASS}
+    Click Button  css=button[type='submit']
+    Page Should Contain    Увійдіть в аккаунт
+
 Successful User Login
     [Documentation]    Перевірка успішного входу користувача в систему
     Open Blog Page

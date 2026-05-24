@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 6">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" afterDir="false" />
+    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 6 Fix BlogWebDriverTest.java">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/Blog.side" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/Blog.side" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +161,7 @@
       <workItem from="1779272693086" duration="1234000" />
       <workItem from="1779274839780" duration="5348000" />
       <workItem from="1779626672815" duration="1537000" />
-      <workItem from="1779634832281" duration="1631000" />
+      <workItem from="1779634832281" duration="2370000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1">
       <option name="closed" value="true" />
@@ -307,7 +307,23 @@
       <option name="project" value="LOCAL" />
       <updated>1779636177091</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Lab 6 Fix BlogWebDriverTest.java">
+      <option name="closed" value="true" />
+      <created>1779636488602</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1779636488602</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Lab 6 Fix BlogWebDriverTest.java">
+      <option name="closed" value="true" />
+      <created>1779636536066</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1779636536066</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +359,8 @@
     <MESSAGE value="Lab 5.2 Fix 2 tests.yml" />
     <MESSAGE value="Lab 5.2 Fix 3 blog_tests.robot" />
     <MESSAGE value="Lab 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 6" />
+    <MESSAGE value="Lab 6 Fix BlogWebDriverTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 6 Fix BlogWebDriverTest.java" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Blog$blog_in_blog.ic" NAME="blog in blog Coverage Results" MODIFIED="1778684895803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

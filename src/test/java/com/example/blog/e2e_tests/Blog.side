@@ -873,13 +873,6 @@
       "target": "document.querySelector(\"form[action='/logout']\").submit();",
       "targets": [],
       "value": ""
-    }, {
-      "id": "c3a021ee-3437-4a1a-a935-cc8bbe932c8e",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
     }]
   }],
   "suites": [{

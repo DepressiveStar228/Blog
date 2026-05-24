@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 5.2 Fix 2 tests.yml" />
+    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 5.2 Fix 3 blog_tests.robot">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/PostDetailPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/PostFormPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +62,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.BlogWebDriverTest.executor": "Run",
     "JUnit.blog in blog.executor": "Coverage",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -91,8 +101,26 @@
       <recent name="E:\JetBrains\Projects\demo\src\test\java\com\example\blog" />
       <recent name="E:\JetBrains\Projects\demo\src\main\resources\templates" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.blog.e2e_tests" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogApplication">
+  <component name="RunManager" selected="JUnit.BlogWebDriverTest">
+    <configuration name="BlogWebDriverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.blog.e2e_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.blog.e2e_tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.blog.e2e_tests.BlogWebDriverTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="blog in blog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blog" />
       <option name="TEST_OBJECT" value="directory" />
@@ -111,6 +139,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlogWebDriverTest" />
         <item itemvalue="JUnit.blog in blog" />
       </list>
     </recent_temporary>
@@ -137,7 +166,9 @@
       <workItem from="1778950792344" duration="11403000" />
       <workItem from="1779271359757" duration="1255000" />
       <workItem from="1779272693086" duration="1234000" />
-      <workItem from="1779274839780" duration="4983000" />
+      <workItem from="1779274839780" duration="5348000" />
+      <workItem from="1779626672815" duration="1537000" />
+      <workItem from="1779634832281" duration="1327000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1">
       <option name="closed" value="true" />
@@ -267,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779293307850</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Lab 5.2 Fix 3 blog_tests.robot">
+      <option name="closed" value="true" />
+      <created>1779293829571</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1779293829571</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +340,8 @@
     <MESSAGE value="Lab 5.2 Robot test" />
     <MESSAGE value="Lab 5.2 Fix tests.yml" />
     <MESSAGE value="Lab 5.2 Fix 2 tests.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 5.2 Fix 2 tests.yml" />
+    <MESSAGE value="Lab 5.2 Fix 3 blog_tests.robot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 5.2 Fix 3 blog_tests.robot" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Blog$blog_in_blog.ic" NAME="blog in blog Coverage Results" MODIFIED="1778684895803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

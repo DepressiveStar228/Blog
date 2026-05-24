@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 5.2 Fix 3 blog_tests.robot">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/PostDetailPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/PostFormPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bdef45e5-21e7-464f-8b08-61f16c9626de" name="Changes" comment="Lab 6">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/blog/e2e_tests/BlogWebDriverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +161,7 @@
       <workItem from="1779272693086" duration="1234000" />
       <workItem from="1779274839780" duration="5348000" />
       <workItem from="1779626672815" duration="1537000" />
-      <workItem from="1779634832281" duration="1327000" />
+      <workItem from="1779634832281" duration="1631000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 1">
       <option name="closed" value="true" />
@@ -306,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779293829571</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Lab 6">
+      <option name="closed" value="true" />
+      <created>1779636177091</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1779636177091</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +342,8 @@
     <MESSAGE value="Lab 5.2 Fix tests.yml" />
     <MESSAGE value="Lab 5.2 Fix 2 tests.yml" />
     <MESSAGE value="Lab 5.2 Fix 3 blog_tests.robot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 5.2 Fix 3 blog_tests.robot" />
+    <MESSAGE value="Lab 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Blog$blog_in_blog.ic" NAME="blog in blog Coverage Results" MODIFIED="1778684895803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
